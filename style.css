@@ -1,0 +1,162 @@
+/* Author: - Atul Pratap Singh */
+/* made in :- 08 FEB 2022 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin-top: 3rem;
+    background: #c7a0a2;
+}
+
+.addItems-container{
+    background: #71a0c9;
+}
+
+.addItems-container, .displayItems-container{
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid #272932;
+    box-shadow: 0 5px 10px #272932;
+}
+
+.addItems-title, .displayItems-title{
+    text-transform: capitalize;
+     
+}
+
+.addItems-title{
+    color: #89d433;
+   
+}
+
+.addItems-action, .displayItems-action{
+    border: 2px solid #e77feb;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.addItems-input{
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid #9e90a2;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #885f94;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.addItems-submit,.displayItems-clear{
+    display: block;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.addItems-submit{
+    color: #bdf896;
+    background: transparent;
+    border: 3px solid #b6c2d9;
+    transition: all 2s ease;
+}
+
+.addItems-submit:hover{
+    background: #c9e97d;
+    color: #272932;
+}
+
+.displayItems-container{
+    background: #b6c2d9;
+}
+
+.displayItems-title{
+    color: #4d7ea8;
+    margin-bottom: 0.25rem;
+}
+
+.grocery-item{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 1s ease-in-out;
+    margin: 0.5rem 0;
+}
+
+.grocery-item:hover{
+    background: #828489;
+}
+
+.grocery-item__title{
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #272932;
+}
+
+.grocery-item__link{
+    color: rgb(125, 154, 233);
+    transition: all 2s linear;   
+}
+
+.grocery-item:hover .grocery-item__link{
+    transform: scale(2);
+}
+
+.displayItems-clear{
+    color: #4d7ea8;
+    background: transparent;
+    border: 3px solid #4d7ea8;
+    transition: all 2s ease;
+}
+
+.displayItems-clear{
+    background: #4d7ea8;
+    color:#272932;
+    outline:none;
+    background: transparent;
+}
+.alert{
+    color: rgb(177, 16, 209);
+    border-color: red;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.success{
+    color:rgb(11, 53, 11);
+    border-color: rgb(10, 41, 10);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 50%;
+    }
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+    color: #3543fae0;
+    font-weight: bold;
+}
